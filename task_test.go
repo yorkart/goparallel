@@ -7,7 +7,7 @@ import (
 )
 
 func TestTaskFactory(t *testing.T) {
-	taskFactory := NewTaskFactory("tets", func(taskId string) {
+	taskFactory := NewTask("tets", func(taskId string) {
 		fmt.Println(taskId + " do work")
 		time.Sleep(5 * time.Second)
 	})

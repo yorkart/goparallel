@@ -99,7 +99,7 @@ func (p *Task) doWork() {
 			p.notifyChan <- true
 			return
 		default:
-			p.task(fmt.Sprintf("%d", index))
+			p.action(fmt.Sprintf("%d", index))
 		}
 	}
 }
